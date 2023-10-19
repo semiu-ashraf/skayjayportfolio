@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title color="red">SkayJay</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <section class="memberModal" id="memberModal">
+
+        <div class="whiteBoard1">
+
+            <div class="close" onclick="closeModal('memberModal')">
+                <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+            </div>
+
+            <form id="form" class="form">
+
+                <div class="form_holder">
+                    <input id="name" type="text" onkeyup="ValidateInt(event)" placeholder="Enter Your Name">
+                    <div class="message" id="name_err">message is cool</div>
+                </div>
+
+                <div class="form_holder">
+                    <input id="email" type="email" onkeyup="ValidateInt(event)" placeholder="Enter Email Address">
+                    <div class="message" id="email_err">message is cool</div>
+                </div>
+
+                <div class="form_holder">
+                    <input id="password" type="password"  onkeyup="ValidateInt(event)" placeholder="Enter Password">
+                    <div class="message" id="password_err">message is cool</div>
+                </div>
+
+            </form>
+
+            <button class="btn" id="btn" disabled>Register</button>
+
+        </div>
+
+    </section>
+
+    <section class="imageModal" id="imageModal">
+
+        <div class="whiteBoard2">
+
+            <div class="close" onclick="closeModal('imageModal')">
+                <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+            </div>
+
+            <div class="poster">
+                <img id="poster" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUobDJ5re4b7jjl0LmJwBuh9Ef-SpVDhv26dFg8EMBEXyxW6aKJ8lwWGaAVK1OkyM6f_8&usqp=CAU">
+            </div>
+
+            <div class="content">
+
+                <div>
+                    <h3>Type of Design</h3>
+                    <p id="design">Graphics</p>
+                </div>
+
+                <div>
+                    <h3>Meaning</h3>
+                    <p id="meaning">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div>
+                    <h3>Tutor</h3>
+                    <p id="tutor">Ashraf</p>
+                </div>
+
+                <div class="one">
+                    
+                    <div>
+                        <h3>Lesson Time</h3>
+                        <p id="duration">3 months</p>
+                    </div>
+
+                    <div>
+                        <h3>Price</h3>
+                        <p id="price">60 Naira</p>
+                    </div>
+                </div>                
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section>
+
+        <div class="header">
+
+            <div class="logo">SkayJay</div>
+
+            <ul class="navs">
+                <li>Home</li>
+                <li>Pricing</li>
+                <li>About Us</li>
+            </ul>
+
+            <button type="button" onclick="openPop()" class="btn">Become a Member</button>
+
+        </div>
+
+        <div class="header header2">
+
+            <div class="logo">SkayJay</div>
+
+            <ul class="navs">
+                <li>Home</li>
+                <li>Pricing</li>
+                <li>About Us</li>
+            </ul>
+
+            <button type="button"  class="btn">Become a Member</button>
+
+        </div>
+    
+    </section>
+
+        <section class="slider_box">
+
+            <div class="slider" id="slider">
+
+                <div class="banner">
+                    <div class="overlay">
+                        <h3>SkayJay Design Studio is where you can become an icon as a designer</h3>
+                    </div>
+                </div>
+
+                <div class="banner">
+                    <div class="overlay">
+                        <h3>SkayJay Design Studio is where you can become an icon as a designer</h3>
+                    </div>
+                </div>
+
+                <div class="banner">
+                    <div class="overlay">
+                        <h3>SkayJay Design Studio is where you can become an icon as a designer</h3>
+                    </div>
+                </div>
+
+                <div class="banner">
+                    <div class="overlay">
+                        <h3>SkayJay Design Studio is where you can become an icon as a designer</h3>
+                    </div>
+                </div>
+
+                <div class="banner">
+                    <div class="overlay">
+                        <h3>SkayJay Design Studio is where you can become an icon as a designer</h3>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <div class="moveButtons">
+
+                <div class="next" id="next" onclick="prevSlide()">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+
+                <div class="next" id="prev" onclick="nextSlide()">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                
+            </div>
+
+            <div class="indicator">
+                <span class="indicators white" onclick="indicate(1)"></span>
+                <span class="indicators" onclick="indicate(2)"></span>
+                <span class="indicators" onclick="indicate(3)"></span>
+            </div>
+
+        </section>
+
+        <section class="whatToLearn">
+
+            <h3>Types of Designs</h3>
+
+            <div class="design_box" id="design_box">
+
+            </div>
+
+
+        </section>
+
+        <section class="membersContainer">
+
+            <h3>Members Of SkayJay Design Studio</h3>
+
+            <div id="membersBox">
+
+            </div>
+
+        </section>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

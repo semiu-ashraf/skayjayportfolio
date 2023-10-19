@@ -1,0 +1,432 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.memberModal{
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #adaaaa45;
+    display: none;
+}
+
+.whiteBoard1{
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 10px;
+    position: relative;
+    background-color: white;
+}
+
+.form_holder{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.form_holder > input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    text-indent: 10px;
+    font-family: segoe UI;
+    outline: none;
+    position: absolute;
+    border: 1px solid lightgray;
+}
+
+.btn:disabled{
+    cursor: not-allowed;
+}
+
+.message{
+    padding: 10px 15px;
+    width: 70%;
+    right: -72.5%;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: absolute;
+    font-family: segoe UI;
+    border-radius: 5px;
+    font-size: 15px;
+    display: none;
+    background-color: #e31c1c;
+}
+
+.message::before{
+    content: "";
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    right: 96%;
+    transform: rotateZ(45deg);
+    background-color: #e31c1c;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.imageModal{
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #adaaaa45;
+    display: none;
+}
+
+.whiteBoard2{
+    min-height: 80vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px;
+    background-color: white;
+    position: relative;
+}
+
+.close{
+    position: absolute;
+    right: -8px;
+    top: -6px;
+    color: #e31c1c;
+    cursor: pointer;
+    font-size: 25px;
+    /* border-radius: 75%; */
+    /* box-shadow: 0 0 5px gray; */
+}
+
+.poster{
+    height: 40vh;
+    width: 80%;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.content{
+    padding: 10px 0px;
+    height: 30vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-family: segoe UI;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.one{
+    display: flex;
+    column-gap: 50px;
+}
+
+
+
+
+/* css for header */
+.header{
+    height: 60px;
+    width: 100%;
+    padding: 0px 8%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 20;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+}
+
+.header2{
+    display: none;
+}
+
+.logo{
+    height: 60px;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #02759b;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: segoe UI;
+    text-transform: uppercase;
+}
+
+.navs{
+    width: 40%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.navs > li
+{
+    font-size: 18px;
+    font-family: segoe UI;
+    font-weight: 600;
+}
+
+li:hover{
+    cursor: pointer;
+    color: #02759b;
+    transform: scale(1.1);
+}
+
+
+button{
+    padding: 13px 20px;
+    border: none;    
+    border-radius: 15px;
+    font-size: 18px;
+    font-family: segoe UI;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #00c0ff;
+}
+
+button:hover{
+    color: white;
+    background-color: #02759b;
+}
+
+
+.slider_box{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #f9f9f9;
+}
+
+.slider{
+    height: 600px;
+    width: 500%;
+    display: flex;
+    position: absolute;
+    margin-left: -100%;
+    /* background-color: red; */
+}
+
+.banner{
+    height: 600px;
+    width: calc(100%/5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    /* background-color: yellow;  */
+}
+
+.overlay{
+    height: 600px;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: segoe UI;
+    padding: 200px 8%;
+    /* background-color: rgba(0, 0, 0, 0.2);    */
+}
+
+.overlay > h3
+{
+    width: 50%;
+}
+
+.moveButtons{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+}
+
+.next{
+    height: 70px;
+    width: 30px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.indicator{
+    bottom: 0; 
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    position: absolute;
+}
+
+.indicators{
+    display: block;
+    height: 12px;
+    width: 12px;
+    opacity: 0.5;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.white{
+    opacity: 5;
+}
+
+.disable{
+    pointer-events: none;
+}
+
+
+.whatToLearn{
+    /* height: auto; */
+    width: 100%;
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    padding: 20px 8%;
+    background-color: #f9f9f9;
+}
+
+.whatToLearn > h3{
+    height: 50px;
+    width: 100%;
+    font-size: 25px;
+    font-family: segoe UI;
+    font-weight: 300;
+    color: #02759b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.design_box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    column-gap: calc(10%/2);
+    /* background-color: white; */
+}
+
+.card{
+    width: 30%;
+    /* height: 350px; */
+    overflow: hidden;
+    background-color: yellow;
+}
+
+.image{
+    width: 100%;
+    height: 225px;
+    cursor: pointer;
+    background-color: red;
+}
+
+.image:active{
+    transform: scale(1.1);
+}
+
+img{
+    width: 100%;
+}
+
+.info{
+    height: 170px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-family: segoe UI;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.info > p{
+    font-weight: 300;
+}
+
+.membersContainer{
+    padding: 50px 8%;
+    width: 100%;
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    background-color: #f9f9f9;
+}
+
+
+.membersContainer > h3{
+    height: 50px;
+    width: 100%;
+    font-size: 25px;
+    font-family: segoe UI;
+    font-weight: 300;
+    color: #02759b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+.banner:nth-child(1)
+{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUobDJ5re4b7jjl0LmJwBuh9Ef-SpVDhv26dFg8EMBEXyxW6aKJ8lwWGaAVK1OkyM6f_8&usqp=CAU");   
+}
+
+.banner:nth-child(2)
+{
+    background-image: url("https://img.freepik.com/premium-photo/computer-screen-with-colorful-paint-it-generative-ai_97167-1066.jpg");
+}
+
+.banner:nth-child(3)
+{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3gadFLB6AxmtxIxFrjCYh4k6XUPB322z-29UN5Eh1oXrPks4LEo8wthp-Ud4pjstOZ-0&usqp=CAU");
+}
+
+.banner:nth-child(4)
+{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSutk798GP7hP0LM1hVTQ5ib7j18hzNvmv-iVOX3GAZeqqe4tpDZp9MaFOv8bvD3FBP0Ao&usqp=CAU");   
+}
+
+.banner:nth-child(5)
+{
+    background-image: url("https://img.freepik.com/premium-photo/computer-screen-with-colorful-paint-it-generative-ai_97167-1066.jpg");
+}
