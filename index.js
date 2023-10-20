@@ -121,9 +121,14 @@ function openPop(){
     document.getElementById("email_err").style.display="none";
     document.getElementById("password_err").style.display="none";
     document.getElementById("form").reset();
+    document.getElementById("btn").disabled=true;
 }
 
 
+function openReq(){
+
+    window.location=("https://www.google.com/")
+}
 
 
 
