@@ -430,3 +430,50 @@ img{
 {
     background-image: url("https://img.freepik.com/premium-photo/computer-screen-with-colorful-paint-it-generative-ai_97167-1066.jpg");
 }
+
+
+
+
+
+
+
+@media (min-width: 576px){
+
+    .header
+    {
+        height: 100px;
+        width: 100%;
+    }
+
+    .logo{
+        font-size: 50px;
+    }
+
+    .navs{
+        width: 40%;
+        font-size: 20px;
+        /* display: none; */
+    }
+
+    .slider_box
+    {
+        height: 500px;
+        width: 100%;
+    }
+
+    .slider{
+        height: 500px;
+        width: 500%;
+    }
+
+    .banner{
+        height: 500px;
+        width: calc(100%/5);
+    }
+
+    .whatToLearn{
+        width: 100%;
+    }
+
+
+}
